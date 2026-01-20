@@ -30,5 +30,6 @@ jobs:
             ${{ runner.os }}-build-
             ${{ runner.os }}-
             
-      - run: go env -w GO111MODULE=auto    
+      - run: uname -a
+      - run: go env -w GO111MODULE=auto
       - run: go run -mod=mod hello-world.go
