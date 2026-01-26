@@ -9,7 +9,8 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    #runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
       - name: check-os
         run: echo "The runner's operating system is $RUNNER_OS."
